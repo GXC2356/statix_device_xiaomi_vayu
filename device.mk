@@ -242,6 +242,10 @@ KERNEL_PATH := $(DEVICE_PATH)/prebuilts
 KERNEL_IMAGE := device/xiaomi/vayu/prebuilts/Image
 PRODUCT_COPY_FILES += $(KERNEL_IMAGE):kernel
 
+# Platform
+PRODUCT_BOARD_PLATFORM := msmnile
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
