@@ -235,6 +235,13 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
+# Prebuilt kernel
+KERNEL_PATH := $(DEVICE_PATH)/prebuilts
+
+# Copy Kernel
+KERNEL_IMAGE := device/xiaomi/vayu/prebuilts/Image
+PRODUCT_COPY_FILES += $(KERNEL_IMAGE):kernel
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
