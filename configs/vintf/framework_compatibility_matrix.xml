@@ -135,10 +135,13 @@
             <instance>cnd</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" optional="true">
         <name>android.hardware.configstore</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.1::ISurfaceFlingerConfigs/default</fqname>
+        <version>1.1</version>
+        <interface>
+        <name>ISurfaceFlingerConfigs</name>
+        <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.display.color</name>
@@ -224,7 +227,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.wifi</name>
-        <version>2</version>
+        <version>1.0-6</version>
         <interface>
         <name>IWifi</name>
         <instance>default</instance>
